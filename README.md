@@ -30,3 +30,15 @@ The bot will print a message when it successfully connects to Discord.
    ```bash
    docker run -e DISCORD_TOKEN=YOUR_TOKEN kudl-chatbot
    ```
+
+## Docker Compose
+
+1. Copy `.env.example` to `.env` and update the token:
+   ```bash
+   cp .env.example .env
+   # edit .env and set DISCORD_TOKEN
+   ```
+2. Build and start the container:
+   ```bash
+   docker compose up --build
+   ```
